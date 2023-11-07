@@ -8,56 +8,66 @@ Con tu problema ya definido, aquí tienes un enfoque más detallado para cada pa
 1. Comprensión del dominio: Asegúrate de entender el contexto del fraude con tarjetas de crédito. Investiga tipos de fraude, cómo se realizan y cuáles son las últimas tendencias en la materia.
 Tipos de Fraude con Tarjetas de Crédito:
 Solicitudes de Tarjetas Fraudulentas: Los estafadores utilizan datos personales robados para solicitar nuevas tarjetas de crédito, a menudo cambiando la dirección de envío para recibir la tarjeta y luego utilizarla para realizar compras.
+
 Fraude por Interceptación de Correo: Ocurre cuando los estafadores roban tarjetas de crédito del correo antes de que lleguen al titular de la tarjeta, lo que puede pasar desapercibido hasta que el titular se da cuenta de cargos no autorizados.
+
 Fraude en Transacciones sin Presencia de Tarjeta: Se comete cuando se utilizan números de tarjetas robados para hacer compras por teléfono, correo electrónico o en línea en comercios que no tienen plataformas seguras para ordenar.
+
 Fraude por Violación de Datos: Se refiere al robo de información de tarjetas de crédito de bases de datos de comerciantes debido a brechas de seguridad.
+
 Tarjetas Falsas: Los estafadores fabrican tarjetas de crédito que parecen auténticas y las utilizan en comercios que no han actualizado sus lectores de tarjetas a la tecnología EMV.
+
 Tarjetas Alteradas: Los delincuentes alteran tarjetas para que coincidan con los datos de cuentas legítimas y luego intentan realizar compras con ellas.
+
 Skimming: Se instalan dispositivos en cajeros automáticos o terminales de venta para robar información de tarjetas de crédito y débito, así como los PIN de los usuarios.
-Tendencias Actuales en el Fraude con Tarjetas de Crédito:
-Aumento de Estafas de Phishing y SMS: Los fraudes a través de SMS vinculados a subvenciones energéticas, tasas hipotecarias y tasas de interés están en aumento.
+
+Tendencias Actuales en el Fraude con Tarjetas de Crédito: Aumento de Estafas de Phishing y SMS: Los fraudes a través de SMS vinculados a subvenciones energéticas, tasas hipotecarias y tasas de interés están en aumento.
+
 Riesgos Asociados con la Inteligencia Artificial: La IA, incluidos programas como ChatGPT, puede ser utilizada por los estafadores para generar correspondencia de phishing, mimetizar chatbots legítimos o crear identidades sintéticas.
+
 Fraudes en el Metaverso y Web3: Estas nuevas plataformas son atractivas para los estafadores debido a la falta de regulación y controles mínimos para la incorporación de nuevos clientes.
+
 Fraudes Relacionados con Viajes Aéreos: Agencias de viajes fraudulentas y abuso de programas de lealtad son preocupaciones emergentes conforme la industria aérea se recupera
+
 Fraude en Intercambios de Criptomonedas: La volatilidad del mercado y los altos perfiles de colapsos de intercambios de criptomonedas han aumentado el riesgo de fraudes en este sector
 
 
-2. Recopilación de datos
-3. Limpieza y preprocesamiento de datos: 
+3. Recopilación de datos
+4. Limpieza y preprocesamiento de datos: 
     - Elimina duplicados y maneja los valores faltantes.
     - Codifica las variables categóricas, si las hay, usando técnicas como One-Hot Encoding o Label Encoding.
     - Normaliza o estandariza las variables numéricas para que tengan la misma escala.
 
-4. Análisis exploratorio de datos (EDA):
+5. Análisis exploratorio de datos (EDA):
     - Visualiza las distribuciones de las transacciones fraudulentas y legítimas para identificar patrones.
     - Busca correlaciones entre las características y el fraude.
     - Identifica posibles características influyentes o irrelevantes.
 
-5. Ingeniería de características:
+6. Ingeniería de características:
     - Crea nuevas características que puedan ser indicativas de fraude, como la velocidad de las transacciones, la cantidad gastada en un corto período de tiempo, etc.
     - Considera la importancia del tiempo y la secuencia en las transacciones, lo cual podría significar la aplicación de técnicas de series temporales.
 
-6. Selección y entrenamiento de modelos:
+7. Selección y entrenamiento de modelos:
     - Prueba varios algoritmos como regresión logística, bosques aleatorios, máquinas de vectores de soporte, y redes neuronales.
     - Aplica técnicas de balanceo de clases, ya que los datos de fraude suelen estar muy desequilibrados.
 
-7. Evaluación de modelos:
+8. Evaluación de modelos:
     - Emplea métricas de evaluación adecuadas como la curva ROC, la precisión, el recall y el F1-score.
     - Analiza tanto los errores de tipo I (falsos positivos) como los de tipo II (falsos negativos), ya que ambos tienen diferentes costos en el contexto de fraude.
 
-8. Validación cruzada y ajuste de hiperparámetros:
+9. Validación cruzada y ajuste de hiperparámetros:
     - Usa validación cruzada para garantizar que tu modelo funciona bien en distintos subconjuntos de datos.
     - Ajusta los hiperparámetros utilizando, por ejemplo, búsqueda en cuadrícula o búsqueda aleatoria.
 
-9. Implementación y monitoreo:
+10. Implementación y monitoreo:
     - Crea un pipeline de datos que incluya el preprocesamiento y la puntuación del modelo en tiempo real o en lotes.
     - Establece alertas para el rendimiento del modelo y para cuando se detecten patrones anómalos de fraude.
 
-10. Documentación y presentación de resultados:
+11. Documentación y presentación de resultados:
     - Documenta todas las decisiones tomadas durante el proyecto, incluyendo la selección de características, la elección del modelo y los resultados de las pruebas.
     - Prepara una presentación de resultados clara para los stakeholders, que pueda incluir visualizaciones y explicaciones de los casos en los que el modelo funcionó bien y de aquellos en los que no.
 
-11. Consideraciones éticas y de privacidad:
+12. Consideraciones éticas y de privacidad:
     - Asegúrate de que los datos están anonimizados y que las prácticas de manejo de datos cumplen con todas las regulaciones pertinentes.
     - Ten en cuenta la transparencia y la posibilidad de sesgo en los datos o el modelo, y trabaja para mitigarlos.
 
