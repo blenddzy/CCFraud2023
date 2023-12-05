@@ -1,4 +1,4 @@
-# CCFraud2023 ES un proyecto para detectar fraude en tarjetas de credito en 2023.
+# CCFraud es un proyecto para detectar fraude en tarjetas de credito en 2023.
 
 Definición del problema:
 Esclarece qué aspectos del fraude con tarjetas de crédito estás interesado en abordar. ¿Quieres predecir transacciones fraudulentas, identificar patrones de fraude o evaluar la efectividad de las medidas de seguridad existentes?
